@@ -21,7 +21,7 @@ if (mysqli_num_rows($hasil) > 0) {
         <div class="card mb-3" style="max-width: 540px;">
         <div class="row g-0">
        <div class="col-md-4">
-       <img src="./assets/img/<?= $row['gambar']?>" class="img-fluid rounded-start" alt="...">'
+       <img src="./assets/img/<?= $row['gambar']?>" class="img-fluid rounded-start" alt="...">
         </div>
        <div class="col-md-8">
         <div class="card-body">
