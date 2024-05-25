@@ -19,8 +19,8 @@ $hasil = mysqli_query($koneksi, $sql);?>
     <?php include '../include/mtt.php'?>
 </head>
 <body>
-    <?= include '../include/navbar.php' ?>
-    
+    <?php include '../include/navbar.php' ?>
+    <a href="tambah.php" class="btn btn-primary">Tambah</a>
 <table class="table table-hover">
 <thead>
     <tr>
@@ -40,12 +40,12 @@ if (mysqli_num_rows($hasil) > 0) {
 ?>
   <tbody>
     <tr>
-      <th scope="row"><?= $row['id']?></th>
-      <td><?= $row['judul']?></td>
-      <td><?= $row['truncated_description']?>...</td>
-      <td><img src="../assets/img/<?= $row['gambar']?>" style="height: auto;width: 100px;"></td>
-      <td><?= $row['url']?></td>
-      <td><a href="">Hapus</a><a href="">Edit</a></td>
+      <th scope="row"><?php echo $row['id'];?></th>
+      <td><?php echo  $row['judul'];?></td>
+      <td><?php echo $row['truncated_description'];?>...</td>
+      <td><img src="../assets/img/<?php echo $row['gambar'];?>" style="height: auto;width: 100px;"></td>
+      <td><?php echo $row['url'];?></td>
+      <td><a href="hapus.php?id=<?php echo $row['id'];?>">Hapus</a><a href="edit.php?id=<?php echo $row['id'];?>">Edit</a></td>
     </tr>
     <?php    }
 } else {
@@ -57,7 +57,7 @@ mysqli_close($koneksi);
 ?>
   </tbody>
 </table>
-<?= include '../include/footer.php' ?>
-<?= include '../script.php' ?>
+<?php include '../include/footer.php' ?>
+<?php include '../script.php' ?>
 </body>
 </html>

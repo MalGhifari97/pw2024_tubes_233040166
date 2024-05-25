@@ -12,13 +12,16 @@
 <body>
     
 <?php include'./include/navbar.php'; ?>
-<div class="container-sm" style="display:flex; justify-content: center; flex-direction: column;">
-<?= include'content2.php'; ?>
-</div>
+<center>
+<div class="container-sm" style="flex-direction: column; width:90vh;">
+<?php include'content2.php'; ?>
+</div>  
+</center>
+
 
 <?php include'./include/footer.php';?>
 
-<?= include'./include/mtt.php';?>
-<?= include'script.php';?>    
+<?php include'./include/mtt.php';?>
+<?php include'script.php';?>    
 </body>
 </html>
