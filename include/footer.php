@@ -1,7 +1,7 @@
 <footer id="footer">
     
     
-    <div class="copyright text-center">
+    <div class="copyright text-center" style="padding:10px;">
     <div class="icons text-center">
         <a href="https://www.facebook.com/profile.php?id=100017635476187"><i class="bx bxl-facebook"></i></a>
         <a href="https://www.instagram.com/mal_ghifari97/"><i class="bx bxl-instagram"></i></a>

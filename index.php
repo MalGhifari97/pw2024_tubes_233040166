@@ -10,10 +10,14 @@
 <style>
 </style>
 <body>
-    
 <?php include'./include/navbar.php'; ?>
+    <div class="home" id="home">
+        <div>
+            <img src="./" alt="">
+        </div>
+    </div>
 <center>
-<div class="container-sm" style="flex-direction: column; width:90vh;">
+<div class="container-fluid" style="flex-direction: row; display:flex; flex-wrap:wrap; padding:10px;">
 <?php include'content2.php'; ?>
 </div>  
 </center>

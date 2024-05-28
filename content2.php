@@ -6,10 +6,13 @@ $koneksi = mysqli_connect("localhost", "root", "", "pw2024_tubes_233040166");
 if (!$koneksi) {
     die("Koneksi gagal: " . mysqli_connect_error());
 }
-
+$search = isset($_GET["search"]) ? $_GET["search"] : null ;
 // Query untuk mengambil data dari tabel musik
 $sql = "SELECT id, judul, gambar, deskripsi, url FROM music";
-$hasil = mysqli_query($koneksi, $sql);?>
+if ($search) {
+    $sql .=" WHERE judul LIKE '%$search%'";
+  }
+  $hasil = mysqli_query($koneksi, $sql);?>
 
 
 <?php 
@@ -18,13 +21,14 @@ if (mysqli_num_rows($hasil) > 0) {
     // output data setiap baris
     while($row = mysqli_fetch_assoc($hasil)) {
 ?>
-    <a href="<?=$row['url']?>" style="text-decoration: none; color: black; width:auto; height:fit-content;">
-        <div class="card mb-3" style="max-width: 540px;">
-        <div class="row g-0">
-       <div class="col-md-4">
-       <img src="./assets/img/<?=$row['gambar']?>" class="img-fluid rounded-start" alt="...">
+<div class="container-sm" style="width: 410px; margin:0;">
+<a href="<?=$row['url']?>" style="text-decoration: none; color: black; width:400px;">
+        <div class="card mb-3" style="max-width: 400px;">
+        <div class="row g-0" style="display:flex; flex-direction:column;">
+       <div class="container-fluid" style="margin: 0; padding:0;">
+       <img src="./assets/img/<?=$row['gambar']?>" class="img-fluid rounded-start" alt="..." style="width:100%;">
         </div>
-       <div class="col-md-8">
+       <div class="container-fluid">
         <div class="card-body">
         <h5 class="card-title"> <?=$row['judul']?></h5>
         <p><?php echo $row['deskripsi'];?></p>
@@ -34,6 +38,8 @@ if (mysqli_num_rows($hasil) > 0) {
         </div>
         </div>
         </a>
+</div>
+    
 <?php    }
 } else {
     echo "Tidak ada data";

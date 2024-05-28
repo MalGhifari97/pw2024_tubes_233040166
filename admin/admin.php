@@ -16,11 +16,11 @@ $hasil = mysqli_query($koneksi, $sql);?>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin</title>
-    <?php include '../include/mtt.php'?>
+    <?php include '../include/mtt.php';?>
 </head>
 <body>
-    <?php include '../include/navbar.php' ?>
-    <a href="tambah.php" class="btn btn-primary">Tambah</a>
+    <?php include '../include/navbar.php';?>
+    <a href="tambah.php" class="btn btn-primary mt-5">Tambah</a>
 <table class="table table-hover">
 <thead>
     <tr>

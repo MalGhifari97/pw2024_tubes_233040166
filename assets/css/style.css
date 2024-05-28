@@ -4,9 +4,15 @@
     padding: 0;
 }
 
-/* navbar */
-
-/* navbar */
+/* home */
+.home {
+    height: 100vh;
+    background-image: url('../img/aespa.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* home */
 
 
 
@@ -14,10 +20,6 @@
 
 
 /* footer */
-.copyright text-center {
-    width: 150%;
-    background-color: rgb(215, 20, 20);
-}
 .icons i {
     color: white;
     font-size: 30px;
@@ -25,12 +27,10 @@
     border: 2px solid white;
     border-radius: 5px;
 }
-.icons i:hover {
-    color: rgb(0,0,164);
-    background-color: white;
-}
+
 .copyright {
-    color: white;
+    color: rgb(255, 255, 255);
+    background-color: black;
     margin-top: 20px;
 }
 /* footer end */
