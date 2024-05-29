@@ -1,11 +1,16 @@
 <?php
+session_start();
 // Koneksi ke database
 $koneksi = mysqli_connect("localhost", "root", "", "pw2024_tubes_233040166");
-
+if (!isset($_SESSION["loggedin_admin"]) || $_SESSION["loggedin_admin"] !== true) {
+  header("Location: login.php");
+  exit;
+}
 // Periksa koneksi
 if (!$koneksi) {
     die("Koneksi gagal: " . mysqli_connect_error());
 }
+
 
 // Query untuk mengambil data dari tabel musik
 $sql = "SELECT id, judul, gambar, SUBSTRING(deskripsi, 1, 200) AS truncated_description, url FROM music";

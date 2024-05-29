@@ -1,4 +1,5 @@
 <?php
+session_start();
 // Koneksi ke database
 $koneksi = mysqli_connect("localhost", "root", "", "pw2024_tubes_233040166");
 

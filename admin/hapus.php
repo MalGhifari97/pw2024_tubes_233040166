@@ -1,4 +1,5 @@
 <?php
+session_start();
 $koneksi = mysqli_connect("localhost", "root", "", "pw2024_tubes_233040166");
 // Periksa koneksi
 if (!$koneksi) {
