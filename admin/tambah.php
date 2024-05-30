@@ -61,8 +61,8 @@ $conn->close();
 <form method="post" enctype="multipart/form-data">
     <ul>
         <li>
-            <label for="judul">judul : </label>
-            <input type="text" name="judul" id="judul" required>
+            <label  class="form-label" for="judul">judul : </label>
+            <input class="form-control" type="text" name="judul" id="judul" required>
         </li>
         <li>
             <label for="gambar">gambar : </label>

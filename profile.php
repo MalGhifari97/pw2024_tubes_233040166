@@ -10,13 +10,19 @@ session_start();
     <title>profile</title>
 </head>
 <style>
+    .profile{
+        text-align: center;
+        place-content: center;
+        background-color: black;
+        color: white;
+    }
 </style>
 <body>
     
 <?php include'./include/navbar.php'; ?>
 
-<div class="profile" style="min-height: 100vh;">
-
+<div class="profile container-fluid mt-5"   style="min-height: 100vh;">
+<h1>hello welcome to M-Update</h1>
 </div>
 
 <?php include'./include/footer.php';?>

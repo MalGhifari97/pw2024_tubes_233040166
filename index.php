@@ -14,9 +14,7 @@ session_start();
 <body>
 <?php include'./include/navbar.php'; ?>
     <div class="home mt-5" id="home">
-        <div>
-            <img src="./" alt="">
-        </div>
+        
     </div>
 <center>
 <div class="container-fluid" style="flex-direction: row; display:flex; flex-wrap:wrap; padding:10px; background-color:black;">
