@@ -56,7 +56,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                             $_SESSION["username"] = $username;
                             
                             // Redirect ke halaman selamat datang
-                            header("Location: profile.php");
+                            header("Location: index.php");
                             exit();
                         } else {
                             // Password tidak valid

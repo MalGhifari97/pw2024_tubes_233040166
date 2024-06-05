@@ -50,7 +50,9 @@ if (mysqli_num_rows($hasil) > 0) {
       <td><?php echo $row['truncated_description'];?>...</td>
       <td><img src="../assets/img/<?php echo $row['gambar'];?>" style="height: auto;width: 100px;"></td>
       <td><?php echo $row['url'];?></td>
-      <td><a href="hapus.php?id=<?php echo $row['id'];?>">Hapus</a><a href="edit.php?id=<?php echo $row['id'];?>">Edit</a></td>
+      <td>
+      <td><a  class="btn btn-outline-danger" href="hapus.php?id=<?php echo $row['id'];?>">Hapus</a>
+      <a class="btn btn-outline-warning" href="edit.php?id=<?php echo $row['id'];?>">Edit</a></td>
     </tr>
     <?php    }
 } else {

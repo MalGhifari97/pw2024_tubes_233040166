@@ -28,9 +28,14 @@
     border-radius: 5px;
 }
 
-.copyright {
+.copyright{
     color: rgb(255, 255, 255);
-    background-color: black;
-    margin-top: 20px;
+    
+}
+#po{
+    margin-top: -200px;
+}
+footer{
+    background-color: rgb(255, 30, 0);
 }
 /* footer end */

@@ -36,17 +36,48 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Register</title>
     <?php include './include/mtt.php'; ?>
 </head>
+<style>
+        .form {
+            min-height: 90vh;
+            width: 75vh;
+
+        }
+        .register {
+            margin-top: 5vh ;
+            width: 75vh;
+            min-height: 80vh;
+            border: 5px solid white;
+            border-radius: 20px;
+            place-content: center;
+            justify-content: center ;
+            text-align: center;
+            background-color: black;
+            color: white;
+        }
+        input {
+            max-width: 400px;
+
+           
+        }
+        body {
+            background-image: url(assets/img/bb.jpg);
+            background-size: cover;
+        }
+    </style>
 <body>
     <div class="form container-fluid">
         <form method="post">
-            <div class="form_place">
+            <div class="register container-sm" style="text-align: -webkit-center;">
             <h1>Daftar</h1>
             <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
+            <input type="text" id="username" name="username" required class="form-control me-2" style="outline:auto;">
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
+            <input type="password" id="password" name="password" required class="form-control me-2" style="outline:auto;">
+            <div>
+                <br>
             <input type="submit" value="register" class="btn btn-success" style="font-size: larger; width: fit-content;">
-                <a href="<?php echo BASE_URL; ?>login.php" class="btn btn-primary" style="font-size: larger; width: fit-content; place-content: center;">kembali</a>
+                <a href="index.php" class="btn btn-outline-light" style="font-size: larger; width: fit-content; place-content: center;">kembali</a>
+                </div>
             </div>
             </div>
         </form>

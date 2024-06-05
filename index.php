@@ -13,9 +13,7 @@ session_start();
 </style>
 <body>
 <?php include'./include/navbar.php'; ?>
-    <div class="home mt-5" id="home">
-        
-    </div>
+    <div class="home mt-5" id="home"></div>
 <center>
 <div class="container-fluid" style="flex-direction: row; display:flex; flex-wrap:wrap; padding:10px; background-color:black;">
 <?php include'content2.php'; ?>
