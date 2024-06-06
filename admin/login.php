@@ -97,21 +97,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             margin-top: 5vh ;
             width: 75vh;
             min-height: 80vh;
-            border: 5px solid white;
+            border: 5px solid rgb(255, 30, 0);
             border-radius: 20px;
             place-content: center;
             justify-content: center ;
             text-align: center;
             background-color: black;
-            color: white;
+            color: rgb(255, 30, 0);
+            font-family: "Tilt Neon", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            font-variation-settings:
+            "XROT" 0,
+            "YROT" 0;
         }
         input {
             max-width: 400px;
            
         }
         body {
-            background-image: url(../assets/img/bb.jpg);
-            background-size: cover;
+            background-color: black;
         }
     </style>
 <body>

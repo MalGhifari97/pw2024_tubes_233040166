@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Neonderthaw&family=Tilt+Neon&display=swap');
 * {
     margin: 0;
     padding: 0;
@@ -14,9 +14,29 @@
 }
 /* home */
 
+/* navbar */
+.navbar {
+    font-family: "Tilt Neon", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "XROT" 0,
+      "YROT" 0;
+}
+/* navbar */
 
-
-
+/* content2 */
+.card {
+    font-family: "Tilt Neon", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "XROT" 0,
+      "YROT" 0;
+}
+/* content2 */
 
 
 /* footer */
@@ -37,5 +57,12 @@
 }
 footer{
     background-color: rgb(255, 30, 0);
+    font-family: "Tilt Neon", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "XROT" 0,
+      "YROT" 0;
 }
 /* footer end */

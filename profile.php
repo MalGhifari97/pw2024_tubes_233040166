@@ -14,7 +14,14 @@ session_start();
         text-align: center;
         place-content: center;
         background-color: black;
-        color: white;
+        color: rgb(255, 30, 0);
+        font-family: "Tilt Neon", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+        font-variation-settings:
+        "XROT" 0,
+        "YROT" 0;
     }
 </style>
 <body>
