@@ -1,4 +1,6 @@
-
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,15 +12,20 @@
 <style>
 </style>
 <body>
-    
 <?php include'./include/navbar.php'; ?>
-<div class="container-sm" style="display:flex; justify-content: center; flex-direction: column;">
-<?= include'content2.php'; ?>
-</div>
+    <div class="home mt-5" id="home">
+        <img src="./assets/img/m.jpg" alt="" style="object-fit:cover; width:100%;">
+    </div>
+<center>
+<div class="container-fluid" style="flex-direction: row; display:flex; flex-wrap:wrap; padding:10px; background-color:rgb(58, 51, 51);">
+<?php include'content2.php'; ?>
+</div>  
+</center>
+
 
 <?php include'./include/footer.php';?>
 
-<?= include'./include/mtt.php';?>
-<?= include'script.php';?>    
+<?php include'./include/mtt.php';?>
+<?php include'script.php';?>    
 </body>
 </html>
