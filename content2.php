@@ -23,7 +23,7 @@ if (mysqli_num_rows($hasil) > 0) {
 ?>
 <div class="container-sm" style="width: 410px; margin:0;">
 <a href="<?=$row['url']?>" style="text-decoration: none; color: black; width:400px;">
-        <div class="card mb-3" style="max-width: 400px; border: 3px solid  rgb(255, 30, 0); border-radius: 10px ; display:flex; flex-wrap:wrap; max-height: 500px; height:490px;">
+        <div class="card mb-3" style="max-width: 400px; border: 6px solid  black; border-radius: 10px ; display:flex; flex-wrap:wrap; max-height: 500px; height:490px;">
         <div class="row g-0" style="flex:1;">
        <div class="container-fluid" style="margin: 0; padding:0;">
        <img src="./assets/img/<?=$row['gambar']?>" class="img-fluid rounded-start" alt="..." style="width:100%;">

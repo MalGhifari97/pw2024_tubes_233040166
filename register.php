@@ -46,13 +46,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             margin-top: 5vh ;
             width: 75vh;
             min-height: 80vh;
-            border: 5px solid rgb(255, 30, 0);
+            border: 5px solid white;
             border-radius: 20px;
             place-content: center;
             justify-content: center ;
             text-align: center;
             background-color: black;
-            color: rgb(255, 30, 0);
+            color: white;
             font-family: "Tilt Neon", sans-serif;
             font-optical-sizing: auto;
             font-weight: 400;
@@ -67,7 +67,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
            
         }
         body {
-            background-color: black;
+            background-image: url(./assets/img/bb.jpg);
+            background-size: cover;
         }
     </style>
 <body>
@@ -81,7 +82,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <input type="password" id="password" name="password" required class="form-control me-2" style="outline:auto;">
             <div>
                 <br>
-            <input type="submit" value="register" class="btn btn-success" style="font-size: larger; width: fit-content;">
+            <input type="submit" value="register" class="btn btn-outline-success" style="font-size: larger; width: fit-content;">
                 <a href="index.php" class="btn btn-outline-light" style="font-size: larger; width: fit-content; place-content: center;">kembali</a>
                 </div>
             </div>

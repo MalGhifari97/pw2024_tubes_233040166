@@ -13,8 +13,8 @@ session_start();
     .profile{
         text-align: center;
         place-content: center;
-        background-color: black;
-        color: rgb(255, 30, 0);
+        background-color: rgb(58, 51, 51);
+        color: white;
         font-family: "Tilt Neon", sans-serif;
         font-optical-sizing: auto;
         font-weight: 400;

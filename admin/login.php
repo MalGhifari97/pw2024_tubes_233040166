@@ -97,13 +97,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             margin-top: 5vh ;
             width: 75vh;
             min-height: 80vh;
-            border: 5px solid rgb(255, 30, 0);
+            border: 5px solid white;
             border-radius: 20px;
             place-content: center;
             justify-content: center ;
             text-align: center;
             background-color: black;
-            color: rgb(255, 30, 0);
+            color: white;
             font-family: "Tilt Neon", sans-serif;
             font-optical-sizing: auto;
             font-weight: 400;
@@ -117,7 +117,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
            
         }
         body {
-            background-color: black;
+            background-image: url(/assets/img/bb.jpg);
+            background-size: cover;
         }
     </style>
 <body>

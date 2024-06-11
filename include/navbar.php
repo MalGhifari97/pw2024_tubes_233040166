@@ -2,9 +2,9 @@
 define('BASE_URL', 'http://localhost/pw2024_tubes_233040166/');
 ?>
 
-<nav class="navbar navbar-expand-lg fixed-top" style="background-color:  rgb(255, 30, 0);">
+<nav class="navbar navbar-expand-lg fixed-top" style="background-color:  black;">
   <div class="container-fluid">
-    <a class="navbar-brand text-white" href="#">M-Update</a>
+    <a class="navbar-brand text-white" >M-Update</a>
     <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon" style="background-color:white;"></span>
     </button>
