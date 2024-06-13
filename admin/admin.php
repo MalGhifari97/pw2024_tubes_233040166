@@ -25,7 +25,7 @@ $hasil = mysqli_query($koneksi, $sql);?>
 </head>
 <body>
     <?php include '../include/navbar.php';?>
-    <a href="tambah.php" class="btn btn-primary mt-5">Tambah</a>
+    <a href="tambah.php" class="btn btn-primary mt-5" style="float: left;">Tambah</a>
 <table class="table table-hover">
 <thead>
     <tr>
