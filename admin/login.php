@@ -117,7 +117,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
            
         }
         body {
-            background-image: url(/assets/img/bb.jpg);
+            background-image: url(../assets/img/bb.jpg);
             background-size: cover;
         }
     </style>
