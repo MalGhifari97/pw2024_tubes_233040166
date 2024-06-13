@@ -13,7 +13,11 @@ if (!$koneksi) {
 
 
 // Query untuk mengambil data dari tabel musik
+$search = isset($_GET["search"]) ? $_GET["search"] : null ;
 $sql = "SELECT id, judul, gambar, SUBSTRING(deskripsi, 1, 200) AS truncated_description, url FROM music";
+      if ($search) {
+        $sql .=" WHERE judul LIKE '%$search%'";
+      }
 $hasil = mysqli_query($koneksi, $sql);?>
 <!DOCTYPE html>
 <html lang="en">
@@ -54,9 +58,9 @@ if (mysqli_num_rows($hasil) > 0) {
       <td><a  class="btn btn-outline-danger" href="hapus.php?id=<?php echo $row['id'];?>">Hapus</a>
       <a class="btn btn-outline-warning" href="edit.php?id=<?php echo $row['id'];?>">Edit</a></td>
     </tr>
-    <?php    }
+    <?php }
 } else {
-    echo "Tidak ada data";
+    echo "<td colspan='6'>Tidak Ada Data</td>";
 }
 
 // Tutup koneksi
